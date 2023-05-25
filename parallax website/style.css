@@ -1,0 +1,46 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 18px Arial, sans-serif;
+}
+
+.story-part {
+  min-height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-content {
+  text-align: center;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h1, h2, p {
+  color: white;
+}
+
+#story-beginning {
+  background-image: url('earth.jpg');
+  background-color: #7ec0ee;
+}
+
+#story-middle {
+  background-image: url('space.jpg');
+  background-color: #000;
+}
+
+#story-end {
+  background-image: url('stars.jpg');
+  background-color: #000;
+}
