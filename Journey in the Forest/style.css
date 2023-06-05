@@ -1,0 +1,21 @@
+body {
+    background-image: url("morning_forest.jpg");
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: background-image 2m linear;
+}
+
+#title {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10%;
+}
+
+#title-image {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
