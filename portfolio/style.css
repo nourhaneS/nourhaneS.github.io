@@ -1,0 +1,248 @@
+body {
+  background-color: #ADD8E6; /* Setting the background color for the entire page */
+  font-family: Arial, sans-serif; /* The default font for the page */
+}
+/* Navigation Bar */
+nav {
+  background-color: #fc7f9c;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav h1 {
+  color: white;
+  text-align: left;
+  flex-grow: 1;
+}
+/* Navigation links */
+ul#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul#navbar li {
+  margin-right: 10px;
+}
+
+ul#navbar li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul#navbar li a:hover {
+  background-color: deeppink;
+}
+
+.container1 {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1em;
+  position: relative;
+  left: 0;
+}
+
+p {
+  width: 80%;
+  margin: 10% auto;
+  padding-top: 0.5em;
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+img {
+  width: 60%;
+  max-width: 100%;
+  display: block;
+  margin: 2em auto 0;
+}
+
+/* Carousel Image Container */
+.img-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fc7f9c;
+  width: 60%;
+}
+
+.overlay2 {
+  position: relative;
+  top: 40%;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  opacity: 1;
+  transition: .5s ease;
+  background-color: #fc7f9c;
+  width: 20%;
+  height: %;
+  text-align: center;
+}
+/* When img-container is hovered, the overlay becomes fully visible */
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.textov {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Intro Screen */
+/* Styles for the intro screen, including setting a background image */
+#intro-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: #333;
+  font-size: 1.5em;
+  padding: 225px;
+  background-image: url('flightscreen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Styles for the content within the intro screen */
+#intro-content {
+  position: relative;
+  width: 80%;
+  max-width: 600px; 
+  margin-bottom: 1em;
+  color: white;
+  font-family: georgia;
+}
+
+/* Styles for the "Discover" button */
+#discover-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #ADD8E6;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+  /* Styles for the map, including setting a background image and initially hiding it */
+#map {
+  display: none;
+  position: relative;
+  height: 1000px;
+  background-image: url('worldmap.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+  /* Styles for the destination markers on the map */
+
+.destination {
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+/* Styles for each specific destination marker, positioning them at different spots on the map */
+
+#assignment1 { top: 10%; left: 20%; }
+#assignment2 { top: 20%; left: 60%; }
+#assignment3 { top: 50%; left: 30%; }
+#assignment4 { top: 70%; left: 80%; }
+#about-me { top: 45%; left: 40%; }
+  /* Styles for the plane marker, including setting a background image and creating a transition for its movement */
+
+#plane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('plane_icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: top 2s, left 2s;
+}
+ /* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  nav.responsive {
+    display: block; /* Show the navigation on small screens */
+  }
+
+  nav h1 {
+    text-align: center; /* Center the navigation heading */
+  }
+
+  ul#navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul#navbar li {
+    margin-bottom: 5px;
+  }
+
+  .container1 {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    width: 100%;
+    margin-bottom: 1em;
+    padding-top: 0.3em;
+    font-size: 1em;
+  }
+
+  img {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  .textov {
+    font-size: 20px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    opacity: 0.5;
+    transition: .5s ease;
+    background-color: #fc7f9c;
+    width: 100%;
+  }
+}

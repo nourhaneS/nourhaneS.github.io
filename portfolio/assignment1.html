@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">  <!-- This meta tag defines the character set used in the document. -->
+<head>
+  <title>Nourhane Sekkat's portfolio</title> <!-- Title for the webpage. -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to an external CSS file for styles. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This meta tag makes the webpage responsive. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- This link imports Font Awesome icons. -->
+<!-- Inline CSS for specific elements. -->
+  <style>
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: -10%; /* Add bottom margin */
+  position: relative;
+  /*center it horizontally*/
+  left: 0;
+  font-weight: bold; /* Make the text bold */
+
+  
+}
+  </style>
+</head>
+<body>
+<nav> <!-- The navigation bar with links to different pages. -->
+  <!-- Each list item is a link to a different page. -->
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+    <i class="fa fa-bars"></i> <!-- This is a hamburger menu icon that triggers the "toggleNav" function when clicked. -->
+  </a>
+    <ul id="navbar">
+      <li><a href="index.html#intro-screen">Home</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="assignment1.html">Assignment 1</a></li>
+      <li><a href="assignment2.html">Assignment 2</a></li>
+      <li><a href="assignment3.html">Assignment 3</a></li>
+      <li><a href="assignment4.html">Assignment 4</a></li>
+    </ul>
+    <h1>Nourhane's Life</h1>
+  </nav>
+  <main>
+    <div class="container1"> <!-- project description, process, and image container for the project itself -->
+      <h2 style="color: deeppink;">Campus-Cravings</h2>
+      <p style="color: black;"> - Campus Cravings Project Description Campus Cravings is a web-based project that aims to be a guide for students seeking affordable and delicious food options in Abu Dhabi. The overall theme is about good food meeting the student budget. The goal was to create an engaging, visually-appealing, and user-friendly website that offers students a curated list of eateries and dining options, reviews, recommendations, and recipes.
+      <br>  </br>- The project was implemented using HTML for the structure, CSS for styling, and JavaScript for interactivity. The first step was to define the layout of the website, which was accomplished using HTML. Next, I used CSS to style the website to make the website visually appealing while also ensuring that the information was easy to read and understand and added styles for the text, background, and images, and also animations for elements like the website title. Then I used JavaScript to add interactivity to the website like the carousel for the images and added the feature for the website title "Campus Cravings" to fade in and out to grab the visitor's attention.
+      </p>
+
+
+      <div class="img-container">
+        <a href="https://nourhanes.github.io/Campus-Cravings/">
+          <img src="assignment1.jpg" alt="Clickable Image" />
+          <div class="overlay">
+            <div class="textov">go to project</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
